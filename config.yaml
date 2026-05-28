@@ -25,5 +25,74 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
-  intent_profiles: []
-source_backends: {}
+  intent_profiles:
+    - tag: AED-drone
+      description: >-
+        寻找无人机配送AED、无人机AED选址、AED设施选址优化、院外心脏骤停急救响应、无人机路径规划与飞行高度优化相关论文，重点关注facility location、survival
+        maximization、visibility graph、response time optimization等方法。
+      enabled: true
+      paper_sources:
+        - arxiv
+        - biorxiv
+      keywords:
+        - keyword: drone AED
+          keyword_cn: 无人机AED
+          query: drone-delivered automated external defibrillator
+        - keyword: AED facility location
+          keyword_cn: AED设施选址
+          query: optimal placement of AED facilities
+        - keyword: facility location optimization
+          keyword_cn: 设施选址优化
+          query: facility location problem optimization for emergency response
+        - keyword: response time optimization
+          keyword_cn: 响应时间优化
+          query: minimizing response time for AED delivery
+        - keyword: drone path planning
+          keyword_cn: 无人机路径规划
+          query: path planning algorithms for unmanned aerial vehicles
+      intent_queries:
+        - query: >-
+            drone delivery of AEDs for out of hospital cardiac arrest with focus on facility location and survival
+            maximization
+          query_cn: 无人机配送AED用于院外心脏骤停，重点研究设施选址和生存率最大化
+          enabled: true
+          source: manual
+          note: ''
+        - query: visibility graph based path planning for drones delivering AEDs to minimize response time
+          query_cn: 基于可见性图的无人机送达AED路径规划以最小化响应时间
+          enabled: true
+          source: manual
+          note: ''
+        - query: optimizing drone flight altitude and AED facility locations for emergency medical response
+          query_cn: 优化无人机飞行高度和AED设施选址以改善紧急医疗响应
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-05-28T03:48:21.840Z'
+source_backends:
+  arxiv:
+    papers_table: arxiv_papers
+    use_vector_rpc: true
+    vector_rpc: match_arxiv_papers
+    vector_rpc_exact: match_arxiv_papers_exact
+    use_bm25_rpc: true
+    bm25_rpc: match_arxiv_papers_bm25
+    sync_table: arxiv_sync_status
+    sync_success_value: success
+    schema: public
+    kind: supabase
+    enabled: true
+    url: https://lyucdwgefyfbmaiopjbk.supabase.co
+    anon_key: sb_publishable_lX-oi64Uxyd7SIVv3_w2Uw_MTOojeKq
+  biorxiv:
+    papers_table: biorxiv_papers
+    use_vector_rpc: true
+    vector_rpc: match_biorxiv_papers_exact
+    vector_rpc_exact: match_biorxiv_papers_exact
+    use_bm25_rpc: true
+    bm25_rpc: match_biorxiv_papers_bm25
+    schema: public
+    kind: supabase
+    enabled: true
+    url: https://lyucdwgefyfbmaiopjbk.supabase.co
+    anon_key: sb_publishable_lX-oi64Uxyd7SIVv3_w2Uw_MTOojeKq
