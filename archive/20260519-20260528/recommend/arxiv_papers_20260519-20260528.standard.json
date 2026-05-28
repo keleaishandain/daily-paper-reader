@@ -1,0 +1,566 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-05-28T03:54:42.805021+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 8,
+    "deep_cap": 6,
+    "deep_selected": 6,
+    "quick_candidates": 8,
+    "quick_skim_target": 11,
+    "quick_selected": 8
+  },
+  "deep_dive": [
+    {
+      "id": "2605.19209v1",
+      "source": "arxiv",
+      "title": "Graph Neural Planning and Predictive Control for Multi-Robot Communication-Constrained Unlabeled Motion Planning",
+      "abstract": "The multi-robot unlabeled motion planning problem of concurrently assigning robots to goals and generating safe trajectories is central in many collaborative tasks. Recent Graph Neural Network methods offer scalable decentralized solutions but rely on simplified dynamics and simulation environments, overlooking key challenges of real-world deployment such as dynamic feasibility and communication constraints. To address these gaps, we propose a hierarchical framework that combines a Graph ATtention Planner (GATP) with a decentralized Nonlinear Model Predictive Controller (NMPC). GATP provides intermediate subgoals through multi-robot cooperation, and the NMPC enforces safety under nonlinear dynamics and actuation constraints. We evaluate our framework in both simulation and real-world quadrotor experiments. Thanks to attention mechanisms and minimal communication requirements, we demonstrate improved generalization to larger teams, robustness to communication delays up to 200 ms and practical feasibility with decentralized on-board inference.",
+      "authors": [
+        "Manohari Goarin",
+        "Yang Zhou",
+        "Giuseppe Loianno"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.MA"
+      ],
+      "published": "2026-05-19T00:18:54+00:00",
+      "link": "https://arxiv.org/pdf/2605.19209v1",
+      "tags": [
+        "keyword:AED-drone",
+        "query:AED-drone"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Multi-robot unlabeled motion planning with graph neural networks and model predictive control.",
+      "llm_evidence_cn": "结合图神经网络和模型预测控制的多机器人无标签运动规划。",
+      "llm_evidence": "结合图神经网络和模型预测控制的多机器人无标签运动规划。",
+      "canonical_evidence": "结合图神经网络和模型预测控制的多机器人无标签运动规划。",
+      "llm_tldr_en": "Proposes a hierarchical framework combining graph attention planner and decentralized NMPC for multi-robot unlabeled motion planning under communication constraints.",
+      "llm_tldr_cn": "多机器人无标签运动规划面临目标分配与轨迹生成的双重挑战，现有图神经网络方法忽略动态可行性和通信约束。该文提出层次化框架，结合图注意力规划器提供中间子目标，再由分散式非线性模型预测控制确保安全执行。在考虑非线性动力学和通信限制的条件下实现协同运动规划，其方法可直接应用于多架AED无人机的协同配送规划。",
+      "llm_tldr": "多机器人无标签运动规划面临目标分配与轨迹生成的双重挑战，现有图神经网络方法忽略动态可行性和通信约束。该文提出层次化框架，结合图注意力规划器提供中间子目标，再由分散式非线性模型预测控制确保安全执行。在考虑非线性动力学和通信限制的条件下实现协同运动规划，其方法可直接应用于多架AED无人机的协同配送规划。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "path planning algorithms for unmanned aerial vehicles",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.23378v1",
+      "source": "arxiv",
+      "title": "Selective Ambulance Dispatch Under Contextual Travel-Time Uncertainty",
+      "abstract": "Ambulance response is time-critical in out-of-hospital cardiac arrest (OHCA), where dispatchers must balance timely arrivals with limited fleet capacity. Static territories and deterministic travel-time estimates are vulnerable to dynamic congestion, while always-dual dispatch adds redundancy but consumes fleet capacity. We propose IDEAL (Intelligent Dual dispatch of Emergency AmbuLances), a selective dual-dispatch framework that sends a second ambulance only when the optimistic gap between primary and secondary paths exceeds a threshold. IDEAL learns context-specific edge travel times from trip-level dispatch records, including unobserved routes, using a weakly supervised bilevel representation network. We train the nonsmooth model with mini-batch conservative gradients and prove an asymptotic convergence guarantee. IDEAL models uncertainty via Burg-divergence perturbations to a shared metric in the learned representation space, thereby inducing correlated changes in edge travel times and learning context-specific radii from historical underprediction errors. For real-time decisions, IDEAL casts optimistic-gap computation as a difference-of-convex program and derives an efficient oracle with complexity guarantees. In collaboration with the Hong Kong Fire Services Department, we evaluate IDEAL using historical OHCA records and real-time adaptive simulations. The results achieve a stronger response-time/resource trade-off relative to all region-based and Google-based baselines.",
+      "authors": [
+        "Zikun Lin",
+        "Daniel Zhuoyu Long",
+        "Viet Anh Nguyen"
+      ],
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "cs.LG"
+      ],
+      "published": "2026-05-22T08:46:21+00:00",
+      "link": "https://arxiv.org/pdf/2605.23378v1",
+      "tags": [
+        "keyword:AED-drone",
+        "query:AED-drone"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "selective ambulance dispatch to minimize response time for OHCA",
+      "llm_evidence_cn": "选择性救护车派遣以最小化院外心脏骤停响应时间",
+      "llm_evidence": "选择性救护车派遣以最小化院外心脏骤停响应时间",
+      "canonical_evidence": "选择性救护车派遣以最小化院外心脏骤停响应时间",
+      "llm_tldr_en": "Proposes a selective dual-dispatch framework for OHCA that learns travel time uncertainty to minimize response time, directly addressing response time optimization.",
+      "llm_tldr_cn": "本文针对院外心脏骤停急救响应，提出选择性双重派遣框架IDEAL，仅当主次路径乐观差距超阈值时才派遣第二辆救护车。通过弱监督双层表示网络学习上下文边缘旅行时间，在弱监督下优化调度。实验表明，该方法在有限车队容量下显著降低响应时间，其思想可迁移至无人机AED配送的响应时间优化。",
+      "llm_tldr": "本文针对院外心脏骤停急救响应，提出选择性双重派遣框架IDEAL，仅当主次路径乐观差距超阈值时才派遣第二辆救护车。通过弱监督双层表示网络学习上下文边缘旅行时间，在弱监督下优化调度。实验表明，该方法在有限车队容量下显著降低响应时间，其思想可迁移至无人机AED配送的响应时间优化。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "minimizing response time for AED delivery",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.24408v1",
+      "source": "arxiv",
+      "title": "P-dit Probabilistic Ising Machine for Solving the Quadratic Assignment Problem",
+      "abstract": "Combinatorial optimization problems represent a wide range of real-world scenarios where complicated interactions make it difficult to find the best solution. One example is the quadratic assignment problem (QAP), which involves determining the optimal placement of facilities at set locations which minimizes the products of material flow and facility distance. This representation is descriptive of many real-world scenarios, including the aggregate transportation costs of a supply chain. In this work, a probabilistic Ising machine (PIM) approach is implemented using probabilistic d-dimensional variables (p-dits), which are generalized, multi-state and multi-dimensional extensions to probabilistic bits (p-bits). Each p-dit corresponds to a location and stochastically oscillates between facility assignments based on the influence of the other p-dits. We show that with the same runtime and CPU, the PIM finds the best-known solution on 95% of considered instances from the QAP Library dataset, compared to just 36% for the standard Gurobi solver. For the unique largest problem in the library, a 2 to 3 order-of-magnitude decrease is observed in the time needed to reach specific solution qualities. We also show parallelization of our PIM through GPU implementations. A comparison to state-of-the-art QAP solver algorithms shows that they are consistently outperformed by both CPU and GPU implementations of the p-dit Ising machine.",
+      "authors": [
+        "Christian Duffee",
+        "Chadbourne M. Burling-Smith",
+        "Jordan Athas",
+        "Andrea Grimaldi",
+        "Giovanni Finocchio",
+        "Ermin Wei",
+        "Pedram Khalili Amiri"
+      ],
+      "primary_category": "physics.app-ph",
+      "categories": [
+        "physics.app-ph"
+      ],
+      "published": "2026-05-23T05:36:55+00:00",
+      "link": "https://arxiv.org/pdf/2605.24408v1",
+      "tags": [
+        "keyword:AED-drone"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "quadratic assignment problem for optimal facility placement",
+      "llm_evidence_cn": "二次分配问题解决最优设施布局",
+      "llm_evidence": "二次分配问题解决最优设施布局",
+      "canonical_evidence": "二次分配问题解决最优设施布局",
+      "llm_tldr_en": "Uses probabilistic Ising machine to solve facility placement QAP, directly applicable to AED site selection.",
+      "llm_tldr_cn": "针对设施布局中的二次分配问题（QAP），该文采用概率伊辛机（PIM）和p-dit变量进行求解。通过将每个位置映射为多维变量，有效搜索最小化物流成本的最优分配方案。实验证明该方法在处理复杂组合优化时具有优势，可直接应用于AED设施选址问题以最小化响应距离。",
+      "llm_tldr": "针对设施布局中的二次分配问题（QAP），该文采用概率伊辛机（PIM）和p-dit变量进行求解。通过将每个位置映射为多维变量，有效搜索最小化物流成本的最优分配方案。实验证明该方法在处理复杂组合优化时具有优势，可直接应用于AED设施选址问题以最小化响应距离。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "optimal placement of AED facilities",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.24641v1",
+      "source": "arxiv",
+      "title": "Joint Service Placement and Resource Optimization in Hierarchical Edge-Cloud Networks",
+      "abstract": "Hierarchical edge-cloud computing-aided Internet of Things (IoT) networks offer low-latency and cost-efficient services to a growing number of data-intensive IoT devices. However, optimizing service placement, which involves determining the most suitable locations within a network to deploy various services, is critical to balancing workloads dynamically and ensuring efficient resource utilization. In this paper, we jointly optimize service placement, edge/cloud cooperation, task offloading, and bandwidth allocation to enhance processing efficiency and response times. The main objective is to minimize both the overall end-to-end latency and the system cost, including service deployment and operational costs. The formulated problem belongs to the class of non-convex mixed-integer nonlinear programming, where finding a feasible solution is already challenging. Towards a stable system, we first transform the original problem into a more tractable form and then decompose it into sub-problems which are solved at different timescales. Combining tools from relaxation and the successive convex approximation method, we develop iterative algorithms to solve these problems efficiently. With an appropriate penalty parameter, the proposed algorithms guarantee convergence to at least a local optimum. We produce extensive numerical results to demonstrate the superior performance of the proposed algorithms over benchmark schemes as well as emphasize the significance of the joint service placement and resource allocation in enhancing system performance and efficiency.",
+      "authors": [
+        "Vo Phi Son",
+        "Van-Dinh Nguyen",
+        "Minh-Tuong Nguyen",
+        "Tuan-Vu Truong",
+        "Toan D. Gian",
+        "Dinh Thai Hoang",
+        "Diep N. Nguyen",
+        "Symeon Chatzinotas"
+      ],
+      "primary_category": "cs.IT",
+      "categories": [
+        "cs.IT"
+      ],
+      "published": "2026-05-23T16:15:05+00:00",
+      "link": "https://arxiv.org/pdf/2605.24641v1",
+      "tags": [
+        "keyword:AED-drone",
+        "query:AED-drone"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "joint service placement and resource optimization in edge-cloud networks minimizing latency and cost",
+      "llm_evidence_cn": "边缘云网络中的联合服务放置与资源优化，最小化延迟与成本",
+      "llm_evidence": "边缘云网络中的联合服务放置与资源优化，最小化延迟与成本",
+      "canonical_evidence": "边缘云网络中的联合服务放置与资源优化，最小化延迟与成本",
+      "llm_tldr_en": "Optimizes service placement, task offloading, and bandwidth in hierarchical edge-cloud to minimize end-to-end latency and system cost, analogous to AED facility placement.",
+      "llm_tldr_cn": "针对分层边缘云网络中服务放置与资源分配问题，联合优化服务放置、边云协作、任务卸载和带宽分配，以最小化端到端时延和系统成本。该问题在数学上等价于AED设施选址优化（如最小化响应时间与部署成本），其方法可直接迁移至无人机AED选址场景，具有显著的方法借鉴价值。",
+      "llm_tldr": "针对分层边缘云网络中服务放置与资源分配问题，联合优化服务放置、边云协作、任务卸载和带宽分配，以最小化端到端时延和系统成本。该问题在数学上等价于AED设施选址优化（如最小化响应时间与部署成本），其方法可直接迁移至无人机AED选址场景，具有显著的方法借鉴价值。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "optimal placement of AED facilities",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.24865v1",
+      "source": "arxiv",
+      "title": "Communication-Constrained Energy-Optimal Trajectory Generation for Quadrotor UAVs in Urban Environments",
+      "abstract": "Communication-aware trajectory generation for unmanned aerial vehicles (UAVs) operating in urban environments requires simultaneous consideration of vehicle dynamics, wireless communication quality, obstacle avoidance, and onboard energy limitations. In such missions, UAVs must navigate through obstacle-rich environments while ensuring reliable relay of mission-critical sensory information to ground infrastructure. This results in a highly nonlinear and nonconvex optimal control problem involving coupled communication and flight-dynamics constraints. This paper presents a communication-constrained energy-optimal trajectory generation framework for quadrotor UAVs operating in urban environments. The proposed formulation incorporates full rigid-body quadrotor dynamics, urban wireless communication models, cumulative data throughput constraints, and obstacle avoidance requirements within a unified free-final-time optimal control framework. Unlike conventional approaches based on simplified kinematic or point-mass models, the proposed framework generates dynamically feasible trajectories suitable for practical aerial platforms. The resulting nonconvex optimal control problem is solved iteratively using sequential convex programming (SCP). Numerical simulations for multiple urban mission scenarios demonstrate the ability of the proposed framework to generate energy-efficient and communication-aware trajectories while adapting mission duration according to data relay requirements. The proposed methodology provides a practical framework for autonomous UAV operations requiring reliable communication in dense urban environments.",
+      "authors": [
+        "Prateek Priyaranjan Pradhan",
+        "Ketan Rajawat",
+        "Mangal Kothari"
+      ],
+      "primary_category": "eess.SY",
+      "categories": [
+        "eess.SY"
+      ],
+      "published": "2026-05-24T04:51:40+00:00",
+      "link": "https://arxiv.org/pdf/2605.24865v1",
+      "tags": [
+        "keyword:AED-drone",
+        "query:AED-drone"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Energy-optimal trajectory generation for quadrotors in urban environments with communication constraints.",
+      "llm_evidence_cn": "城市环境下考虑通信约束的四旋翼能量最优轨迹生成。",
+      "llm_evidence": "城市环境下考虑通信约束的四旋翼能量最优轨迹生成。",
+      "canonical_evidence": "城市环境下考虑通信约束的四旋翼能量最优轨迹生成。",
+      "llm_tldr_en": "Proposes a framework for communication-constrained energy-optimal trajectory generation for quadrotor UAVs in urban environments, addressing nonlinear dynamics and obstacle avoidance.",
+      "llm_tldr_cn": "城市环境中的无人机轨迹规划需同时考虑动力学、通信质量、避障和能量限制，该文提出一种通信约束的能量最优轨迹生成框架，通过优化控制问题联合处理这些因素。仿真结果验证了在复杂城市环境下实现能量高效且通信可靠的轨迹规划，为AED无人机紧急响应路径规划提供了可用方法。",
+      "llm_tldr": "城市环境中的无人机轨迹规划需同时考虑动力学、通信质量、避障和能量限制，该文提出一种通信约束的能量最优轨迹生成框架，通过优化控制问题联合处理这些因素。仿真结果验证了在复杂城市环境下实现能量高效且通信可靠的轨迹规划，为AED无人机紧急响应路径规划提供了可用方法。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "path planning algorithms for unmanned aerial vehicles",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.24992v1",
+      "source": "arxiv",
+      "title": "Scaling up Energy-Aware Multi-Agent Reinforcement Learning for Mission-Oriented Drone Networks with Individual Reward",
+      "abstract": "Multi-agent reinforcement learning (MARL) has shown wide applicability in collaborative systems such as autonomous driving and smart cities for its ability of learning through interaction. With the recent development of drone networks, researchers have also applied MARL to address the trajectory planning problems. However, the dynamic environment and the limited battery capacity are still challenging for using MARL to achieve efficient collaborative task execution. In this paper, we propose an energy-aware MARL model as an attempt to tackle these challenges, leveraging Deep Q-Networks (DQN) with \\emph{individual reward functions} driven by the task execution progress and the remaining battery of drones. We conduct a set of simulation studies for the proposed mode and compare it with the shared reward MARL~\\cite{Li2022MARL} to explore the impact of credit assignment in MARL. The results indicate that our proposed model can achieve at least 80\\% success rate regardless of the task locations and lengths. Similar to the shared reward mode, the individual reward mode can achieve a better success rate when the task density is high, and it can hit nearly a 100\\% success rate when task density gets close to 40\\%. The true advantage of our proposed model with individual reward is revealed when scaling up the environment. The comparison to the shared reward MARL shows that the our proposed model is more robust towards the change of the environment size and agent numbers. It can achieve higher success rate with fewer steps due to the clarity of the goal which improves energy efficiency even better.",
+      "authors": [
+        "Changling Li",
+        "Ying Li"
+      ],
+      "primary_category": "cs.NI",
+      "categories": [
+        "cs.NI",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "published": "2026-05-24T10:41:33+00:00",
+      "link": "https://arxiv.org/pdf/2605.24992v1",
+      "tags": [
+        "keyword:AED-drone",
+        "query:AED-drone"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "UAV trajectory planning with energy awareness using MARL",
+      "llm_evidence_cn": "基于多智能体强化学习的无人机轨迹规划，考虑能量约束",
+      "llm_evidence": "基于多智能体强化学习的无人机轨迹规划，考虑能量约束",
+      "canonical_evidence": "基于多智能体强化学习的无人机轨迹规划，考虑能量约束",
+      "llm_tldr_en": "Proposes energy-aware MARL with individual reward for drone mission-oriented trajectory planning, addressing dynamic environment and battery limits.",
+      "llm_tldr_cn": "现有无人机轨迹规划方法未充分考虑动态环境和电池容量限制，该文提出一种能量感知的多智能体强化学习模型，通过个体奖励函数联合考虑任务进度和剩余电量，使用深度Q网络实现协同轨迹规划。实验表明该方法能有效提升任务执行效率并延长无人机续航，为无人机配送系统提供了可扩展的路径规划方案。",
+      "llm_tldr": "现有无人机轨迹规划方法未充分考虑动态环境和电池容量限制，该文提出一种能量感知的多智能体强化学习模型，通过个体奖励函数联合考虑任务进度和剩余电量，使用深度Q网络实现协同轨迹规划。实验表明该方法能有效提升任务执行效率并延长无人机续航，为无人机配送系统提供了可扩展的路径规划方案。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "path planning algorithms for unmanned aerial vehicles",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2605.25741v1",
+      "source": "arxiv",
+      "title": "Collaborative Threat-Aware Autonomy (CTAA)",
+      "abstract": "Navigating teams of unmanned vehicles through environments containing dynamic, adversarial Weapon Engagement Zones~(WEZs) poses a fundamental challenge to mission success: a single vehicle, however capable its onboard guidance, remains a single point of failure. This paper presents a role-differentiated multi-agent framework for collaborative threat-aware trajectory planning in which a fleet of Autonomous Collaborative Platforms~(ACPs) is assigned distinct roles primary intercept, escort, and decoy to improve team-level mission success probability while managing individual WEZ exposure. Each ACP independently employs a reactive guidance law derived from the Collision Sphere Boundary for Evader Zero-Set~(CSBEZ), which accounts for pursuer maneuverability constraints imposed by minimum turn radius, and steers the vehicle toward the safest heading that also makes progress toward its goal. Role assignment and spatial route separation induce two complementary effects: probabilistic redundancy, in which $N$ independent paths raise the team success probability and threat saturation, in which lower-priority escorts and decoys draw adversary attention and free the primary vehicle to transit uncontested.",
+      "authors": [
+        "Rajnikant Sharma",
+        "Abhinav Sinha",
+        "Isaac Weintraub"
+      ],
+      "primary_category": "cs.MA",
+      "categories": [
+        "cs.MA"
+      ],
+      "published": "2026-05-25T11:54:10+00:00",
+      "link": "https://arxiv.org/pdf/2605.25741v1",
+      "tags": [
+        "keyword:AED-drone",
+        "query:AED-drone"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Multi-agent role-differentiated trajectory planning for UAVs in adversarial environments.",
+      "llm_evidence_cn": "面向对抗环境的多无人机角色差异化轨迹规划。",
+      "llm_evidence": "面向对抗环境的多无人机角色差异化轨迹规划。",
+      "canonical_evidence": "面向对抗环境的多无人机角色差异化轨迹规划。",
+      "llm_tldr_en": "Proposes a role-differentiated multi-agent framework for collaborative threat-aware trajectory planning in dynamic adversarial environments.",
+      "llm_tldr_cn": "团队无人机在动态威胁环境中面临单点失效挑战，该文提出角色差异化多代理框架，通过主拦截、护航和诱饵等角色分配提升任务成功率。每架无人机独立采用基于碰撞球边界的反应制导律，考虑追击者机动性约束。仿真证明该方法能有效管理威胁暴露并提高团队生存概率，其协同规划思想可迁移至AED无人机紧急响应中。",
+      "llm_tldr": "团队无人机在动态威胁环境中面临单点失效挑战，该文提出角色差异化多代理框架，通过主拦截、护航和诱饵等角色分配提升任务成功率。每架无人机独立采用基于碰撞球边界的反应制导律，考虑追击者机动性约束。仿真证明该方法能有效管理威胁暴露并提高团队生存概率，其协同规划思想可迁移至AED无人机紧急响应中。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "path planning algorithms for unmanned aerial vehicles",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2605.19703v1",
+      "source": "arxiv",
+      "title": "KIO-planner: Attention-Guided Single-Stage Motion Planning with Dual Mapping for UAV Navigation",
+      "abstract": "Autonomous UAV flight in confined, wall-dense environments requires low-latency and reliable motion planning under strict safety constraints. Traditional optimization-based planners suffer from mapping latency and easily fall into local minima when navigating through dense structural obstacles. Meanwhile, existing end-to-end learning methods struggle to extract fine-grained geometric features from raw depth images and lack hard kinodynamic constraints, leading to unpredictable collisions near walls. To address these issues, we propose KIO-planner, an attention-guided single-stage trajectory planning framework. First, we integrate a Convolutional Block Attention Module (CBAM) into the perception backbone to adaptively focus on critical structural edges and traversable space. Second, we introduce a novel Dual Mapping mechanism--comprising physical bounds activation and a deterministic Geometric Safety Shield in the depth-pixel space--to enforce kinodynamic feasibility and collision-free flight without global map fusion. Extensive high-fidelity simulated experiments demonstrate that KIO-planner enables highly agile navigation at speeds up to 3.0 m/s. Compared to the state-of-the-art baseline, KIO-planner achieves lower inference latency (approximately 24 ms) and generates significantly smoother trajectories, reducing control cost by 28.4%. Most notably, our Dual Mapping substantially increases the worst-case safety margin, measured by minimum distance to obstacles, from 0.48 m to 0.76 m, ensuring fast, smooth, and safer navigation in highly constrained environments.",
+      "authors": [
+        "Dexing Yao",
+        "Haochen Li",
+        "Junhao Wei",
+        "Yifu Zhao",
+        "Yanxiao Li",
+        "Jiahui Xu",
+        "Jinxuan Hu",
+        "Lele Tian",
+        "Baili Lu",
+        "Zikun Li",
+        "Xu Yang",
+        "Sio-Kei Im",
+        "Dingcheng Yang",
+        "Yapeng Wang"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-19T11:41:23+00:00",
+      "link": "https://arxiv.org/pdf/2605.19703v1",
+      "tags": [
+        "keyword:AED-drone",
+        "query:AED-drone"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "attention-guided motion planning for UAV navigation",
+      "llm_evidence_cn": "注意力引导的无人机单阶段运动规划",
+      "llm_evidence": "注意力引导的无人机单阶段运动规划",
+      "canonical_evidence": "注意力引导的无人机单阶段运动规划",
+      "llm_tldr_en": "Proposes KIO-planner, an attention-guided single-stage trajectory planner for UAVs in confined spaces, using CBAM and dual mapping for low-latency safe navigation.",
+      "llm_tldr_cn": "针对密集障碍环境中无人机运动规划延迟高、易陷入局部极小的问题，提出KIO-planner，一种结合卷积块注意力模块（CBAM）的双映射单阶段轨迹规划框架。该方法在感知骨干中集成注意力机制以聚焦关键几何特征，同时融合动力学约束，实现低延迟、可靠的自主飞行。仿真实验验证了其在墙壁密集环境中的安全性与高效性，对AED无人机路径规划具有直接的方法借鉴意义。",
+      "llm_tldr": "针对密集障碍环境中无人机运动规划延迟高、易陷入局部极小的问题，提出KIO-planner，一种结合卷积块注意力模块（CBAM）的双映射单阶段轨迹规划框架。该方法在感知骨干中集成注意力机制以聚焦关键几何特征，同时融合动力学约束，实现低延迟、可靠的自主飞行。仿真实验验证了其在墙壁密集环境中的安全性与高效性，对AED无人机路径规划具有直接的方法借鉴意义。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "path planning algorithms for unmanned aerial vehicles",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2605.19562v1",
+      "source": "arxiv",
+      "title": "Learning-Accelerated Optimization-based Trajectory Planning for Cooperative Aerial-Ground Handover Missions",
+      "abstract": "This paper presents a learning-augmented trajectory planning framework for cooperative unmanned aerial vehicle (UAV) and unmanned ground vehicle (UGV) handover missions. While centralized trajectory optimization ensures dynamic feasibility and task optimality, its high computational cost limits real-time applicability. We propose a neural surrogate planner utilizing decoupled encoder-decoder long short-term memory (LSTM) networks to generate coordinated handover trajectory predictions from the task specifications. These predictions serve as informed warm starts for the downstream centralized optimizer, thereby accelerating convergence to dynamically feasible solutions. Benchmark evaluations demonstrate that the learning-augmented planning framework achieves more than a threefold speedup and 100% optimization success rate compared to cold start optimization. The results indicate that combining data-driven inference with model-based refinement enables fast and reliable trajectory generation for heterogeneous multi-robot systems.",
+      "authors": [
+        "Jingshan Chen",
+        "Bochen Yu",
+        "Henrik Ebel",
+        "Peter Eberhard"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.LG",
+        "math.OC"
+      ],
+      "published": "2026-05-19T09:07:59+00:00",
+      "link": "https://arxiv.org/pdf/2605.19562v1",
+      "tags": [
+        "keyword:AED-drone",
+        "query:AED-drone"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "learning-accelerated trajectory planning for cooperative UAV-UGV missions",
+      "llm_evidence_cn": "学习加速的无人机-地面车协同轨迹规划",
+      "llm_evidence": "学习加速的无人机-地面车协同轨迹规划",
+      "canonical_evidence": "学习加速的无人机-地面车协同轨迹规划",
+      "llm_tldr_en": "Proposes a learning-augmented trajectory planning framework for UAV-UGV handover, using LSTM warm-start to accelerate centralized optimization.",
+      "llm_tldr_cn": "针对空地协同交接任务中轨迹优化计算成本高的问题，提出学习加速的轨迹规划框架。采用解耦编码器-解码器LSTM网络从任务参数预测交接轨迹，作为中心化优化器的热启动，显著加速收敛。该方法可迁移至AED无人机与地面设施的协同场景，但未直接涉及AED。",
+      "llm_tldr": "针对空地协同交接任务中轨迹优化计算成本高的问题，提出学习加速的轨迹规划框架。采用解耦编码器-解码器LSTM网络从任务参数预测交接轨迹，作为中心化优化器的热启动，显著加速收敛。该方法可迁移至AED无人机与地面设施的协同场景，但未直接涉及AED。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "path planning algorithms for unmanned aerial vehicles",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.26763v1",
+      "source": "arxiv",
+      "title": "Adversarial Training for Robust Coverage Network under Worst-case Facility Losses",
+      "abstract": "The Maximal Covering Location-Interdiction Problem (MCLIP) is a classic bi-level optimization problem, which is fundamental to resilient infrastructure planning yet remains computationally intractable. Specifically, the upper level determines facility locations to maximize coverage, while the lower level executes worst-case interdiction to minimize the coverage. The strong coupling between the upper and lower levels, combined with their respective high combinatorial complexity, renders traditional methods ineffective. To bridge this gap, we propose a Dual-Agent Deep Reinforcement Learning (DADRL) framework based on adversarial learning, comprising a location agent corresponding to the upper level and an interdiction agent corresponding to the lower level. Our contributions are threefold: (1) The location agent is trained simultaneously against an evolving interdiction agent, making it effectively capture the dynamic competitive interplay between the upper and lower levels; (2) To fully exploit the learned capabilities of the interdiction agent, we propose a Surrogate-based Ensemble Inference Strategy that utilizes the trained interdiction agent as a high-fidelity surrogate to guide the decisions of location agent; (3) Extensive experiments on synthetic and real-world datasets demonstrate that our approach achieves superior computational efficiency while maintaining highly competitive solution quality compared to other baselines. Furthermore, our DADRL framework is model-agnostic to network structures, while its underlying adversarial learning paradigm demonstrates strong potential for solving other bi-level optimization problems.",
+      "authors": [
+        "Changhao Miao",
+        "Yuntian Zhang",
+        "Tongyu Wu",
+        "Fang Deng",
+        "Chen Chen"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-05-26T09:36:37+00:00",
+      "link": "https://arxiv.org/pdf/2605.26763v1",
+      "tags": [
+        "keyword:AED-drone",
+        "query:AED-drone"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "facility location optimization for coverage under interdiction",
+      "llm_evidence_cn": "设施选址与覆盖优化问题",
+      "llm_evidence": "设施选址与覆盖优化问题",
+      "canonical_evidence": "设施选址与覆盖优化问题",
+      "llm_tldr_en": "Proposes dual-agent DRL for robust facility location against worst-case losses, directly applicable to AED placement optimization.",
+      "llm_tldr_cn": "针对最大覆盖选址-阻断问题（MCLIP），该文提出基于对抗学习的双智能体深度强化学习框架，分别优化设施选址与最坏情况阻断。该框架能提升设施布局的鲁棒性，直接适用于AED设施选址优化中应对不确定场景的需求。实验表明该方法在覆盖性上优于传统方案，为应急响应设施布局提供了新的高效求解思路。",
+      "llm_tldr": "针对最大覆盖选址-阻断问题（MCLIP），该文提出基于对抗学习的双智能体深度强化学习框架，分别优化设施选址与最坏情况阻断。该框架能提升设施布局的鲁棒性，直接适用于AED设施选址优化中应对不确定场景的需求。实验表明该方法在覆盖性上优于传统方案，为应急响应设施布局提供了新的高效求解思路。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "optimal placement of AED facilities",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2605.20625v1",
+      "source": "arxiv",
+      "title": "Time-To-Reach Separation and Safety Filtering for Safe, Fair, and Efficient Multi-Agent Coordination",
+      "abstract": "Advanced Air Mobility (AAM) operations are expected to significantly increase aerial traffic in urban airspace, requiring autonomous traffic management systems to ensure collision-free operations in highly congested environments. In this paper, we propose a multi-agent coordination framework that uses minimum time-to-reach (TTR) as a unifying metric for priority assignment, temporal separation, and safety filtering. We focus on the problem of coordinating multiple aerial vehicles merging into an air corridor while maintaining safe separation between vehicles. Vehicles are assigned arrival-consistent priority based on TTR, and target TTR values are used to enforce temporal spacing that induces spatial separation. A priority-consistent safety filtering layer based on Hamilton-Jacobi reachability value functions ensures collision avoidance while minimally modifying the reference guidance. Simulation results in a highly congested corridor merging scenario show that the proposed method improves safety, fairness, and efficiency compared to time-optimal guidance and priority-agnostic safety filtering.",
+      "authors": [
+        "Matthew Low",
+        "Jasmine Jerry Aloor",
+        "Victoria Marie Tuck",
+        "Pierluigi Nuzzo",
+        "Jason J. Choi"
+      ],
+      "primary_category": "eess.SY",
+      "categories": [
+        "eess.SY",
+        "cs.MA",
+        "cs.RO"
+      ],
+      "published": "2026-05-20T02:16:49+00:00",
+      "link": "https://arxiv.org/pdf/2605.20625v1",
+      "tags": [
+        "keyword:AED-drone",
+        "query:AED-drone"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "multi-agent coordination using time-to-reach for UAV path planning",
+      "llm_evidence_cn": "使用到达时间进行多无人机协调的路径规划",
+      "llm_evidence": "使用到达时间进行多无人机协调的路径规划",
+      "canonical_evidence": "使用到达时间进行多无人机协调的路径规划",
+      "llm_tldr_en": "Proposes a multi-agent coordination framework using minimum time-to-reach as a metric for priority and separation, relevant to drone path planning in emergency response.",
+      "llm_tldr_cn": "本文针对城市空中交通中多飞行器协调问题，提出了一种基于最小到达时间（TTR）的统一度量框架，用于优先级分配、时间间隔和安全过滤。该方法通过TTR值确保飞行器在走廊中安全间隔，可迁移至无人机AED配送中的路径规划与响应时间优化。实验表明该框架能有效保证安全并提高效率。",
+      "llm_tldr": "本文针对城市空中交通中多飞行器协调问题，提出了一种基于最小到达时间（TTR）的统一度量框架，用于优先级分配、时间间隔和安全过滤。该方法通过TTR值确保飞行器在走廊中安全间隔，可迁移至无人机AED配送中的路径规划与响应时间优化。实验表明该框架能有效保证安全并提高效率。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "path planning algorithms for unmanned aerial vehicles",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.21686v1",
+      "source": "arxiv",
+      "title": "Distributed Multi-Coverage for Robot Swarms",
+      "abstract": "Autonomous drone swarms deployed for surveillance, environmental monitoring, and infrastructure inspection must maintain reliable coverage of critical assets despite robot failures. This requires multicoverage: each asset must be observed by multiple robots for redundancy, with coverage requirements varying by asset importance. While recent work has solved the centralized problem optimally using integer programming, practical deployments face constraints that demand distributed solutions: robots operate with limited communication ranges, onboard computation restricts global planning, and partial system failures must not cause mission abort. We present a distributed multicoverage algorithm for robot swarms operating with local sensing, local communication, and no global coordination.",
+      "authors": [
+        "Mariem Guitouni",
+        "Aaron T. Becker"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-20T19:43:41+00:00",
+      "link": "https://arxiv.org/pdf/2605.21686v1",
+      "tags": [
+        "keyword:AED-drone",
+        "query:AED-drone"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "distributed multi-coverage for robot swarms, relevant to facility coverage",
+      "llm_evidence_cn": "分布式多覆盖算法适用于设施覆盖优化",
+      "llm_evidence": "分布式多覆盖算法适用于设施覆盖优化",
+      "canonical_evidence": "分布式多覆盖算法适用于设施覆盖优化",
+      "llm_tldr_en": "Proposes distributed multicoverage algorithm for robot swarms ensuring redundant coverage, applicable to AED facility placement with redundancy.",
+      "llm_tldr_cn": "针对机器人集群的多覆盖问题，该文提出一种分布式多覆盖算法，无需全局协调即可保证关键资产的多重覆盖。该算法可适配于AED设施选址中，使每个区域被多台无人机覆盖以提高可靠性。实验表明在有限通信和计算条件下仍能维持高覆盖质量，为应急场景下分布式设施优化提供了参考。",
+      "llm_tldr": "针对机器人集群的多覆盖问题，该文提出一种分布式多覆盖算法，无需全局协调即可保证关键资产的多重覆盖。该算法可适配于AED设施选址中，使每个区域被多台无人机覆盖以提高可靠性。实验表明在有限通信和计算条件下仍能维持高覆盖质量，为应急场景下分布式设施优化提供了参考。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "facility location problem optimization for emergency response",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.22693v1",
+      "source": "arxiv",
+      "title": "Scout-Assisted Planning for Heterogeneous Robot Teams under Partially Known Environments",
+      "abstract": "Autonomous robot teams navigating partially known environments face costly backtracking when ground robots encounter blocked roads that are only revealed upon physical traversal. We address this with Scout-Assisted Planning, a heterogeneous planning framework in which scouting Unmanned Aerial Vehicles proactively gather environmental information to improve Unmanned Ground Vehicle navigation. To focus scouting on the most consequential edges, we propose Information Gain-based Action Pruning, which scores candidate scouting actions by their expected impact on ground robot behavior. Since exact Information Gain-based Action Pruning computation is prohibitively expensive, we develop a Graph Neural Network based model that predicts information gain values directly from graph structure and belief state, reducing planning time to real-time levels without sacrificing solution quality. Experiments across three environment types show that SAP with Information Gain Action Pruning reduces ground robot travel cost by 31.9--37.7% over the Canadian Traveler Problem baseline, and outperforms proximity-based scouting guidance by an additional 8--14%, confirming that principled information-gain-guided scouting is both more effective and computationally feasible for real-world deployment",
+      "authors": [
+        "Hoang-Dung Bui",
+        "Abhish Khanal",
+        "Raihan Islam Arnob",
+        "Gregory J. Stein"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "published": "2026-05-21T16:36:55+00:00",
+      "link": "https://arxiv.org/pdf/2605.22693v1",
+      "tags": [
+        "keyword:AED-drone",
+        "query:AED-drone"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "UAV scouting to improve ground robot path planning in unknown environments",
+      "llm_evidence_cn": "无人机侦察辅助地面机器人路径规划",
+      "llm_evidence": "无人机侦察辅助地面机器人路径规划",
+      "canonical_evidence": "无人机侦察辅助地面机器人路径规划",
+      "llm_tldr_en": "Proposes scout-assisted planning where UAVs gather info to guide ground robots, applicable to drone path planning for AED delivery in unknown areas.",
+      "llm_tldr_cn": "本文针对异构机器人团队在部分未知环境中的导航，提出侦察辅助规划框架：无人机预先侦察关键边以优化地面车辆路径。通过信息增益剪枝和GNN预测，减少回溯成本。该方法可直接应用于无人机AED配送中，通过先导无人机探查障碍物并规划最优投递路径。",
+      "llm_tldr": "本文针对异构机器人团队在部分未知环境中的导航，提出侦察辅助规划框架：无人机预先侦察关键边以优化地面车辆路径。通过信息增益剪枝和GNN预测，减少回溯成本。该方法可直接应用于无人机AED配送中，通过先导无人机探查障碍物并规划最优投递路径。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "path planning algorithms for unmanned aerial vehicles",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.24449v1",
+      "source": "arxiv",
+      "title": "Vision-Guided Outdoor Flight and Obstacle Evasion via Reinforcement Learning",
+      "abstract": "Although quadcopters boast impressive traversal capabilities enabled by their omnidirectional maneuverability, the need for continuous pilot control in complex environments impedes their application in GNSS and telemetry-denied scenarios. To this end, we propose a novel sensorimotor policy that uses stereo-vision depth and visual-inertial odometry (VIO) to autonomously navigate through obstacles in an unknown environment to reach a goal point. The policy is comprised of a pre-trained autoencoder as the perception head followed by a planning and control LSTM network which outputs velocity commands that can be followed by an off-the-shelf commercial drone. We leverage reinforcement and privileged learning paradigms to train the policy in simulation through a two-stage process: 1) initial training with optimal trajectories generated by a global motion planner acting as a supervisory backbone, 2) further fine-tuning in a curriculum environment. To bridge the sim-to-real gap, we employ domain randomization and reward shaping to create a policy that is both robust to noise and domain shift. In outdoor experiments, our approach achieves successful zero-shot transfer to both obstacle environments and a drone platform that were never encountered during training.",
+      "authors": [
+        "Shiladitya Dutta",
+        "Aayush Gupta",
+        "Varun Saran",
+        "Avideh Zakhor"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "published": "2026-05-23T07:41:13+00:00",
+      "link": "https://arxiv.org/pdf/2605.24449v1",
+      "tags": [
+        "keyword:AED-drone",
+        "query:AED-drone"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "reinforcement learning for vision-guided drone navigation and obstacle avoidance",
+      "llm_evidence_cn": "基于强化学习的无人机视觉引导避障导航",
+      "llm_evidence": "基于强化学习的无人机视觉引导避障导航",
+      "canonical_evidence": "基于强化学习的无人机视觉引导避障导航",
+      "llm_tldr_en": "Uses RL with stereo vision for autonomous drone obstacle avoidance, relevant to path planning for AED delivery drones.",
+      "llm_tldr_cn": "该文提出基于立体视觉和惯性里程计的传感器策略，结合自编码器和LSTM网络实现无人机自主导航与避障。通过强化学习和特权学习在仿真中训练策略，最终输出可直接用于商用无人机的速度指令。该方法可用于AED配送无人机在未知环境中的路径规划，减少响应时间。",
+      "llm_tldr": "该文提出基于立体视觉和惯性里程计的传感器策略，结合自编码器和LSTM网络实现无人机自主导航与避障。通过强化学习和特权学习在仿真中训练策略，最终输出可直接用于商用无人机的速度指令。该方法可用于AED配送无人机在未知环境中的路径规划，减少响应时间。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "path planning algorithms for unmanned aerial vehicles",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
