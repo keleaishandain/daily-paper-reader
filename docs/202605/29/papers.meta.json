@@ -1,0 +1,24 @@
+{
+  "label": "2026-05-29",
+  "date": "2026-05-29",
+  "generated_at": "2026-05-29T21:04:22",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202605/29/2605.26304v1-collaborative-navigation-and-exploration-with--sparse-gaussian-processes",
+      "section": "quick",
+      "title_en": "Collaborative Navigation and Exploration with $β$-Sparse Gaussian Processes",
+      "authors": "Evangelos Psomiadis, Dipankar Maity, Panagiotis Tsiotras",
+      "date": "2026-05-25",
+      "pdf": "https://arxiv.org/pdf/2605.26304v1",
+      "score": "7.0",
+      "evidence": "无人机路径规划，使用稀疏高斯过程",
+      "tldr": "针对异构机器人在未知环境中协同导航面临的通信带宽限制问题，提出基于β-稀疏高斯过程的框架。该框架使传感器机器人能在线联合选择要传输的关键地图点和导航动作，同时预测未探索区域。采用任务感知的诱导点选择和平衡探索与任务相关性的行动策略。在火星和地球地图仿真中，路径成本降低18%，传输信息减少76%，有效提升了导航效率并降低了通信负载。",
+      "tags": "query:aed-drone",
+      "abstract_en": "Collaborative navigation of heterogeneous robots in unknown environments poses significant challenges due to sensing, communication, and computational limitations. In this work, a lead robot navigates toward a target while a mobile sensor robot (e.g., a drone) assists by transmitting information about its locally observed environment under bandwidth constraints. We propose a framework that enables the sensor to jointly select its transmitted map points and navigation actions online, while also predicting unexplored regions of the environment. To this end, we present $β$-Sparse Gaussian Processes, a novel and robust variational sparse Gaussian Process model for task-aware inducing point selection. Furthermore, we develop an action-selection strategy that balances task relevance with exploration. Simulations on Mars and Earth maps show that the framework can reduce path cost by 18% relative to no communication and decrease transmitted information by 76% compared to raw-data transmission baselines.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
