@@ -1,0 +1,93 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-05-30T20:27:44.684295+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 1,
+    "deep_cap": 6,
+    "deep_selected": 1,
+    "quick_candidates": 1,
+    "quick_skim_target": 11,
+    "quick_selected": 1
+  },
+  "deep_dive": [
+    {
+      "id": "2605.25010v1",
+      "source": "arxiv",
+      "title": "Performance Comparison of Classical and Neural Sampling Algorithms for Robotic Navigation",
+      "abstract": "Integrating artificial intelligence (AI) into sampling-based motion planning provides new possibilities for improving autonomous navigation efficiency. In this paper, three algorithms, namely RRT*, Neural RRT*, and Neural Informed RRT*, are implemented and evaluated on environments containing convex and concave obstacles with different obstacle densities. The obtained results indicate that neural-guided planners improve path quality, producing up to 14\\% shorter paths and 55--75\\% smoother trajectories compared with the conventional RRT* algorithm. Among the evaluated methods, Neural Informed RRT* achieves the best overall performance in terms of path length and trajectory smoothness. These results demonstrate the effectiveness of AI-guided sampling strategies for improving reliability and trajectory efficiency in robotic and UAV navigation, despite a slight increase in computation time. Overall, the study highlights the growing importance of artificial intelligence in real-time robotic path planning applications.",
+      "authors": [
+        "Hichem Cheriet",
+        "Badra Khellat Kihel",
+        "Samira Chouraqui"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "published": "2026-05-24T11:27:31+00:00",
+      "link": "https://arxiv.org/pdf/2605.25010v1",
+      "tags": [
+        "keyword:AED-drone",
+        "query:AED-drone"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Compares classical and neural sampling algorithms (RRT*, Neural RRT*) for robot navigation, directly applicable to UAV path planning",
+      "llm_evidence_cn": "比较经典与神经采样算法（RRT*、Neural RRT*）的机器人导航性能，可直接用于无人机路径规划",
+      "llm_evidence": "比较经典与神经采样算法（RRT*、Neural RRT*）的机器人导航性能，可直接用于无人机路径规划",
+      "canonical_evidence": "比较经典与神经采样算法（RRT*、Neural RRT*）的机器人导航性能，可直接用于无人机路径规划",
+      "llm_tldr_en": "Compares RRT*, Neural RRT*, and Neural Informed RRT* on robotic navigation, showing neural-informed planners achieve up to 14% shorter paths and 55-75% smoother trajectories, providing strong methodology for UAV path planning optimization",
+      "llm_tldr_cn": "该论文在包含凸凹障碍物的环境中系统比较了RRT*、Neural RRT*和Neural Informed RRT*三种路径规划算法。结果表明，神经引导的规划器相比传统RRT*能生成缩短14%、平滑度提升55-75%的路径。Neural Informed RRT*在轨迹长度和平滑度上综合最优。这些算法可直接应用于无人机路径规划，包括AED无人机的最优路径搜索，以最小化响应时间，具有很强的技术迁移价值。",
+      "llm_tldr": "该论文在包含凸凹障碍物的环境中系统比较了RRT*、Neural RRT*和Neural Informed RRT*三种路径规划算法。结果表明，神经引导的规划器相比传统RRT*能生成缩短14%、平滑度提升55-75%的路径。Neural Informed RRT*在轨迹长度和平滑度上综合最优。这些算法可直接应用于无人机路径规划，包括AED无人机的最优路径搜索，以最小化响应时间，具有很强的技术迁移价值。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "path planning algorithms for unmanned aerial vehicles",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2605.28362v1",
+      "source": "arxiv",
+      "title": "Accelerating Robot Path Planning via Connectivity-Preserving Region Proposal Network",
+      "abstract": "Mobile robot path planning methods are often constrained by vast search spaces, resulting in latency in samplingbased algorithms. Learning-based approaches frequently suffer from local region fragmentation and global topological inconsistency. To tackle the problem, we present the Connectivity- Preserving Region Proposal Network (CP-RPN), a segmentationguided model designed to predict compact and topologically connected candidate regions, significantly compressing the search space. Specifically, we design a segmentation model that leverages a Deformable Attention Transformer (DAT) to capture long-range dependencies for global connectivity, with a Deconvolutional decoder to preserve fine-grained spatial details. To guarantee the connectivity of the predicted mask, we design a composite loss function that combines Cross-Entropy loss for pixelwise supervision, a Connectivity-Aware loss to enhance local coherence, and a Topological Continuity loss based on persistent homology to enforce global connectivity. Building on these highconnectivity corridor-like regions, the Voronoi diagram is used to plan the path, backed by a local A* fallback mechanism to ensure robustness. Experimental results demonstrate that CPRPN reduces the candidate region size by over 60.13% compared to the MPT baseline and achieves deterministic low-latency planning (avg. 0.11s) with a 99.60% success rate, outperforming traditional sampling-based algorithms in stability.",
+      "authors": [
+        "Zhanzheng Ma",
+        "Cancan Zhao",
+        "Shuai Zhang",
+        "Bo Ouyang"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-27T11:59:03+00:00",
+      "link": "https://arxiv.org/pdf/2605.28362v1",
+      "tags": [
+        "keyword:AED-drone",
+        "query:AED-drone"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "path planning method applicable to UAVs",
+      "llm_evidence_cn": "可迁移至无人机的路径规划方法",
+      "llm_evidence": "可迁移至无人机的路径规划方法",
+      "canonical_evidence": "可迁移至无人机的路径规划方法",
+      "llm_tldr_en": "Proposes CP-RPN, a connectivity-preserving region proposal network that compresses search space for path planning, potentially applicable to UAV AED delivery path planning.",
+      "llm_tldr_cn": "该论文提出一种保持连通性的区域提议网络（CP-RPN），用于加速移动机器人路径规划。CP-RPN通过分割模型预测紧凑且拓扑连通的候选区域，显著压缩搜索空间。该方法可迁移至无人机AED配送的路径规划任务，减少响应时间。实验表明CP-RPN在多种场景下有效降低规划延迟。",
+      "llm_tldr": "该论文提出一种保持连通性的区域提议网络（CP-RPN），用于加速移动机器人路径规划。CP-RPN通过分割模型预测紧凑且拓扑连通的候选区域，显著压缩搜索空间。该方法可迁移至无人机AED配送的路径规划任务，减少响应时间。实验表明CP-RPN在多种场景下有效降低规划延迟。",
+      "llm_tags": [
+        "query:aed-drone"
+      ],
+      "matched_query_tag": "query:aed-drone",
+      "matched_query_text": "path planning algorithms for unmanned aerial vehicles",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

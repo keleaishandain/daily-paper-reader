@@ -1,0 +1,39 @@
+{
+  "label": "2026-05-30",
+  "date": "2026-05-30",
+  "generated_at": "2026-05-30T20:29:36",
+  "count": 2,
+  "papers": [
+    {
+      "paper_id": "202605/30/2605.25010v1-performance-comparison-of-classical-and-neural-sampling-algorithms-for-robotic-navigation",
+      "section": "deep",
+      "title_en": "Performance Comparison of Classical and Neural Sampling Algorithms for Robotic Navigation",
+      "authors": "Hichem Cheriet, Badra Khellat Kihel, Samira Chouraqui",
+      "date": "2026-05-24",
+      "pdf": "https://arxiv.org/pdf/2605.25010v1",
+      "score": "8.0",
+      "evidence": "比较经典与神经采样算法（RRT*、Neural RRT*）的机器人导航性能，可直接用于无人机路径规划",
+      "tldr": "采样运动规划中融合人工智能可提升效率。本文对比经典RRT*及其神经网络变体Neural RRT*和Neural Informed RRT*在含凸凹障碍物环境下的性能。实验表明，神经网络引导规划器路径缩短14%、平滑度提升55-75%，其中Neural Informed RRT*综合最优，但计算开销略增。结果验证了AI引导采样在提升机器人/UAV导航轨迹可靠性和效率方面的有效性。",
+      "tags": "query:aed-drone",
+      "abstract_en": "Integrating artificial intelligence (AI) into sampling-based motion planning provides new possibilities for improving autonomous navigation efficiency. In this paper, three algorithms, namely RRT*, Neural RRT*, and Neural Informed RRT*, are implemented and evaluated on environments containing convex and concave obstacles with different obstacle densities. The obtained results indicate that neural-guided planners improve path quality, producing up to 14\\% shorter paths and 55--75\\% smoother trajectories compared with the conventional RRT* algorithm. Among the evaluated methods, Neural Informed RRT* achieves the best overall performance in terms of path length and trajectory smoothness. These results demonstrate the effectiveness of AI-guided sampling strategies for improving reliability and trajectory efficiency in robotic and UAV navigation, despite a slight increase in computation time. Overall, the study highlights the growing importance of artificial intelligence in real-time robotic path planning applications.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202605/30/2605.28362v1-accelerating-robot-path-planning-via-connectivity-preserving-region-proposal-network",
+      "section": "quick",
+      "title_en": "Accelerating Robot Path Planning via Connectivity-Preserving Region Proposal Network",
+      "authors": "Zhanzheng Ma, Cancan Zhao, Shuai Zhang, Bo Ouyang",
+      "date": "2026-05-27",
+      "pdf": "https://arxiv.org/pdf/2605.28362v1",
+      "score": "6.0",
+      "evidence": "可迁移至无人机的路径规划方法",
+      "tldr": "移动机器人路径规划中，采样算法因搜索空间大而产生高延迟，学习方法则常出现区域碎片化和拓扑不一致。为此，本文提出连通性保持区域提议网络(CP-RPN)，一种分割引导模型，通过预测紧凑且拓扑连通的候选区域，大幅压缩搜索空间。模型采用可变形注意力Transformer捕获长距离依赖以保持全局连通性，并利用反卷积解码器保留空间细节；复合损失函数结合交叉熵、连通性感知和基于持续同调的拓扑连续性损失，确保预测遮罩的连通性。规划阶段使用Voronoi图生成路径，并辅以局部A*回退保障鲁棒性。实验结果显示，CP-RPN将候选区域大小较MPT基线降低超过60.13%，实现确定性低延迟规划（平均0.11秒），成功率高达99.60%，优于传统采样算法。",
+      "tags": "query:aed-drone",
+      "abstract_en": "Mobile robot path planning methods are often constrained by vast search spaces, resulting in latency in samplingbased algorithms. Learning-based approaches frequently suffer from local region fragmentation and global topological inconsistency. To tackle the problem, we present the Connectivity- Preserving Region Proposal Network (CP-RPN), a segmentationguided model designed to predict compact and topologically connected candidate regions, significantly compressing the search space. Specifically, we design a segmentation model that leverages a Deformable Attention Transformer (DAT) to capture long-range dependencies for global connectivity, with a Deconvolutional decoder to preserve fine-grained spatial details. To guarantee the connectivity of the predicted mask, we design a composite loss function that combines Cross-Entropy loss for pixelwise supervision, a Connectivity-Aware loss to enhance local coherence, and a Topological Continuity loss based on persistent homology to enforce global connectivity. Building on these highconnectivity corridor-like regions, the Voronoi diagram is used to plan the path, backed by a local A* fallback mechanism to ensure robustness. Experimental results demonstrate that CPRPN reduces the candidate region size by over 60.13% compared to the MPT baseline and achieves deterministic low-latency planning (avg. 0.11s) with a 99.60% success rate, outperforming traditional sampling-based algorithms in stability.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
